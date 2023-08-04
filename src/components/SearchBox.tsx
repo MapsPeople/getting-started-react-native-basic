@@ -24,7 +24,7 @@ export default function SearchBox({onSearch}) {
             }}
         />
         <Button title={'Search'} onPress={() => onSearch(searchBoxText)}/>
-        <Button title={'Cancel'}/>
+        <Button title={'Cancel'} onPress={() => onSearch(undefined)}/>
       </View>
   );
 }
